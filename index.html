@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Pixel-Art</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 class="bar center">Lab: Pixel Art Maker</h1>
+
+    <div class="picker">
+      <h4>Choose Grid Size   <i class="fas fa-th-large"></i></h4>
+      <form id="sizePicker">
+          Grid Height:
+          <input type="number" id="h" name="height" min="1" max="100" value="3">
+          Grid Width:
+          <input type="number" id="w" name="width" min="1" max="100" value="3">
+          <input type="submit" id="btn">
+      </form>
+    </div>
+
+    <div class="canv">
+      <h4 class="center">Canvas</h4>
+      <table id="artFrame"></table>
+    </div>
+
+  <div class="bottom">
+      <h4>Pick A Color   <i style="size: 7px" class="fas fa-palette"></i></h4>
+      <input type="color" id="colorPicker">
+    </div>
+
+    <script src="designs.js"></script>
+</body>
+</html>
